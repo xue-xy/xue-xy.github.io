@@ -6,7 +6,7 @@
 
 <title>NuXmv学习笔记 | Xue Xiaoyong</title>
 
-<link rel="shortcut icon" href="https://xue-xy.github.io/favicon.ico?v=1617860372561">
+<link rel="shortcut icon" href="https://xue-xy.github.io/favicon.ico?v=1618389506627">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://xue-xy.github.io/styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1617860372561" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1618389506627" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -115,6 +115,7 @@
 <ul>
 <li><code>read_model -i filename</code>读取模型文件。</li>
 <li><code>show_property</code>展示模型文件中的性质。</li>
+<li><code>show_traces</code>查看某个迹。</li>
 </ul>
 <h2 id="无限状态系统">无限状态系统</h2>
 <p>有些命令在无限状态的模型中无法使用，这里记录一些在无限状态情况下使用的命令。</p>
@@ -127,6 +128,10 @@
 <li><code>msat_check_ltlspec_bmc</code>使用BMC进行LTL性质检查。</li>
 <li><code>check_ltlspec_ic3</code>使用ic3进行LTL性质检查。和上面的的都可用，但是在无限状态下LTL性质难以被检查出来。</li>
 </ul>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>TRANS中的条件最好是互相不重复，否则可能会出现混淆导致无法执行。</li>
+</ul>
 
                 </div>
             </article>
@@ -136,7 +141,7 @@
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
                 <a href="https://xue-xy.github.io/post/paper-reading/" class="post-title gt-a-link">
-                    Paper Reading
+                    Paper Reading - April, 2021
                 </a>
             </div>
         

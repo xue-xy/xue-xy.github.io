@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xue-xy.github.io</id>
     <title>Xue Xiaoyong</title>
-    <updated>2021-04-08T05:39:38.833Z</updated>
+    <updated>2021-04-14T08:38:29.304Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xue-xy.github.io"/>
     <link rel="self" href="https://xue-xy.github.io/atom.xml"/>
@@ -33,6 +33,7 @@
 <ul>
 <li><code>read_model -i filename</code>读取模型文件。</li>
 <li><code>show_property</code>展示模型文件中的性质。</li>
+<li><code>show_traces</code>查看某个迹。</li>
 </ul>
 <h2 id="无限状态系统">无限状态系统</h2>
 <p>有些命令在无限状态的模型中无法使用，这里记录一些在无限状态情况下使用的命令。</p>
@@ -45,10 +46,14 @@
 <li><code>msat_check_ltlspec_bmc</code>使用BMC进行LTL性质检查。</li>
 <li><code>check_ltlspec_ic3</code>使用ic3进行LTL性质检查。和上面的的都可用，但是在无限状态下LTL性质难以被检查出来。</li>
 </ul>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>TRANS中的条件最好是互相不重复，否则可能会出现混淆导致无法执行。</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Paper Reading]]></title>
+        <title type="html"><![CDATA[Paper Reading - April, 2021]]></title>
         <id>https://xue-xy.github.io/post/paper-reading/</id>
         <link href="https://xue-xy.github.io/post/paper-reading/">
         </link>
@@ -79,6 +84,16 @@
 </ol>
 </blockquote>
 <p>Loss guided $ \partial{l} / \partial{x} $ or $\partial{f(x)} / \partial{x} $. The latter is for specific class attack.</p>
+<h2 id="repairing-deep-neural-networks-fix-patterns-and-challenges"><a href="https://dl.acm.org/doi/10.1145/3377811.3380378">Repairing Deep Neural Networks: Fix Patterns and Challenges</a></h2>
+<p>An empirical study about bug fix patterns in neural network developing. Bug fix pattern includes loss function, add layer, connection, activation, iterations, optimizer, accuracy metric, etc. The bugs can be roughly classified as network-related and non-network-related.</p>
+<p>Non-network-related bugs include version bugs and data dimension bugs and so on. They casue code crash. Network-related bugs are about network structue or loss function. They usually don't make code break down, but they lead to bad performance. Changing these parts of the network may increse prediction accuracy.</p>
+<h2 id="adversarial-sample-detection-for-deep-neural-network-through-model-mutation-testing"><a href="https://ieeexplore.ieee.org/document/8812047">Adversarial Sample Detection for Deep Neural Network through Model Mutation Testing</a></h2>
+<p>Their observation is adversarial samples are much more sensitive than normal samples if we impose random mutations on the DNN.</p>
+<p>Reading.</p>
+<h2 id="neurodiff-scalable-differential-verification-of-neural-networks-using-fine-grained-approximation"><a href="https://dl.acm.org/doi/10.1145/3324884.3416560">NeuroDiff: scalable differential verification of neural networks using fine-grained approximation</a></h2>
+<p>Reading.</p>
+<h2 id="multiple-boundary-clustering-and-prioritization-to-promote-neural-network-retraining"><a href="https://dl.acm.org/doi/10.1145/3324884.3416621">Multiple-boundary clustering and prioritization to promote neural network retraining</a></h2>
+<p>Reading.</p>
 ]]></content>
     </entry>
     <entry>
